@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #002b45;
+    padding: 10px;
+    color: white;
+}
+
+.menu-container {
+    position: relative;
+}
+
+.menu-toggle {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu a:hover,
+.menu a.active {
+    color: #00aaff;
+}
+
+.logo-container img {
+    height: 50px;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+
+.banner {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+.conocenos {
+    padding: 40px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.conocenos .contenido h2 {
+    color: #003366;
+}
+
+.conocenos .contenido p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+.recuadro {
+    width: 45%;
+    margin: 5px;
+    shape-margin: 10%;
+    align-content: center;
+    display: inline-block;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-sizing: content-box;
+}
+
+.historia {
+    margin-top: 60px;
+    padding: 30px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.anuncios {
+    text-align: center;
+    padding: 30px;
+    background-color: #fff;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.galeria img {
+    width: 300px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #003366;
+    color: white;
+}
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .menu-toggle {
+        display: block;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    .menu-container.active .menu {
+        display: flex;
+    }
+
+    .mision-vision {
+        flex-direction: column;
+    }
+}
